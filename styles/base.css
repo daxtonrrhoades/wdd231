@@ -1,0 +1,131 @@
+/* -----SITEWIDE----- */
+
+:root {
+    --primary-color: #304D6D;
+    --secondary-color: #F7F0F5;
+    --accent-color1: #545E75;
+    --accent-color2: #231C07;
+    --accent-color3: #510D0A;
+
+
+
+    --main-font: "Roboto", sans-serif;
+}
+
+* {
+    font-family: var(--main-font);
+}
+
+header,
+main,
+nav,
+footer {
+    /* max-width: 900px; */
+    margin: 0 auto;
+}
+
+/* -----HEADER----- */
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: end;
+    padding: 5px 0 5px 10px;
+    border-bottom: solid 1px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    padding-left: 1rem;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+    margin-top: 0.5rem;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 10px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-bottom: solid 1px var(--secondary-color);
+}
+
+.navigation a:hover {
+    background-color: var(--accent-color1);
+}
+
+.navigation li.current {
+    background-color: var(--accent-color3);
+}
+
+
+/* -----FOOTER----- */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.75rem 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: solid 1px var(--secondary-color);
+    border-radius: 2rem;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: var(--accent-color1);
+}

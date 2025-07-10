@@ -4,11 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Repository Home</title>
+    <meta name="Description"
+        content="A home page for my WDD 231 class project made by Daxton Rhoades and contains information about me.">
+    <meta name="author" content="Daxton Rhoades">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 
 <body>
-
+    <header>
+        <img src="images/house.svg" alt="Site logo" width="" height="">
+        <span>Home Page</span>
+        <button id="ham-btn" class="hamburger"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="index.html">Home Page</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <h2>About Me</h2>
+        <p>My name is Daxton Rhoades. I live in Sandy Utah and have lived in the same neighborhood my entire life.</p>
+        <p>I am 20 years old. I work at America First Credit Union and am in school with BYU Pathway Worldwide.</p>
+        <p>I like the outdoors and sports, but I also enjoy video games and really anything Star Wars.</p>
+    </main>
+    <aside>
+        <h2>Student Photo</h2>
+        <img src="images/me_for_class.jpg" alt="Picture of myself at Garage Grill">
+    </aside>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/daxtonrrhoades"><img src="images/github.svg" alt="Github" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com/in/daxton-rhoades-17160a2ab/"><img src="images/linkedin.svg"
+                    alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://www.instagram.com/charisma_capn"><img src="images/instagram.svg" alt="Instagram" width="16"
+                    height="16"></a>
+        </div>
+        <p>&copy; <span></span></p>
+        <p>Last Modified</p>
+    </footer>
 </body>
 
 </html>

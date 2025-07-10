@@ -1,0 +1,56 @@
+@media only screen and (min-width: 550px) {
+    :root {
+        --primary-color: #304D6D;
+        --secondary-color: #F7F0F5;
+        --accent-color1: #545E75;
+        --accent-color2: #231C07;
+        --accent-color3: #510D0A;
+
+
+
+        --main-font: "Roboto", sans-serif;
+    }
+
+    * {
+        font-family: var(--main-font);
+    }
+
+    body {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+        padding: 1.25rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px var(--secondary-color);
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    main {
+        grid-column: 1/6;
+    }
+
+    aside {
+        grid-column: 6/-1;
+    }
+
+    footer {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+}
