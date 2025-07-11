@@ -1,4 +1,6 @@
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 1200px) {
+
+    /* -----SITEWIDE----- */
     :root {
         --primary-color: #304D6D;
         --secondary-color: #F7F0F5;
@@ -15,9 +17,7 @@
         font-family: var(--main-font);
     }
 
-    body {
-        grid-template-columns: repeat(12, 1fr);
-    }
+    /* -----HEADER----- */
 
     header {
         grid-template-columns: 24px auto;
@@ -41,13 +41,45 @@
         border: none;
     }
 
+    /* -----MAIN----- */
+
     main {
-        grid-column: 1/6;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
     }
 
-    aside {
-        grid-column: 6/-1;
+    main h1 {
+        grid-column: 1;
+        grid-row: 1;
     }
+
+    .bio {
+        grid-column: 1/8;
+        grid-row: 2/3;
+    }
+
+    .photo {
+        grid-column: 8/-1;
+        grid-row: 2/3;
+    }
+
+    .courses {
+        grid-column: 1/-1;
+        grid-row: 4/6;
+        text-align: center;
+    }
+
+    .courses button {
+        width: 180px;
+    }
+
+    #course-container {
+        display: flex;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    /* -----FOOTER----- */
 
     footer {
         background-color: var(--primary-color);

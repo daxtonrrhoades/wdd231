@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/course.js" defer></script>
@@ -35,15 +34,30 @@
     </header>
     <main>
         <h1>Home</h1>
-        <h2>About Me</h2>
-        <p>My name is Daxton Rhoades. I live in Sandy Utah and have lived in the same neighborhood my entire life.</p>
-        <p>I am 20 years old. I work at America First Credit Union and am in school with BYU Pathway Worldwide.</p>
-        <p>I like the outdoors and sports, but I also enjoy video games and really anything Star Wars.</p>
+        <section class="bio">
+            <h2>About Me</h2>
+            <p>My name is Daxton Rhoades. I live in Sandy Utah and have lived in the same neighborhood my entire life.
+            </p>
+            <p>I am 20 years old and I work at America First Credit Union and am in school with BYU Pathway Worldwide.
+            </p>
+            <p>I like the outdoors and sports, but I also enjoy video games and really anything Star Wars.</p>
+        </section>
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/me_for_class.jpg" alt="Picture of myself at Garage Grill">
+        </section>
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="filters">
+                <button id="all">All Courses</button>
+                <button id="wdd">WDD Courses</button>
+                <button id="cse">CSE Courses</button>
+            </div>
+            <p id="course-count"></p>
+            <div class="course-cards" id="course-container"></div>
+            <p class="credits" id="credits"></p>
+        </section>
     </main>
-    <aside>
-        <h2>Student Photo</h2>
-        <img src="images/me_for_class.jpg" alt="Picture of myself at Garage Grill">
-    </aside>
     <footer>
         <div class="social">
             <a href="https://github.com/daxtonrrhoades"><img src="images/github.svg" alt="Github" width="16"
@@ -53,8 +67,8 @@
             <a href="https://www.instagram.com/charisma_capn"><img src="images/instagram.svg" alt="Instagram" width="16"
                     height="16"></a>
         </div>
-        <p>&copy; <span></span></p>
-        <p>Last Modified</p>
+        <p>&copy;<span id="currentyear"></span> | Daxton Rhoades | Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
 </body>
 
