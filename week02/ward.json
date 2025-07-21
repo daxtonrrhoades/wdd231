@@ -1,0 +1,38 @@
+{
+    "familyName": "Rhoades",
+    "dateMovedIn": "2025-05-25",
+    "numberOfPeople": 6,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "Camille",
+            "gender": "Female",
+            "birthdate": "1977-08-10"
+        },
+        {
+            "name": "Dustin",
+            "gender": "Male",
+            "birthdate": "1977-12-11"
+        },
+        {
+            "name": "Noah",
+            "gender": "Male",
+            "birthdate": "2003-09-29"
+        },
+        {
+            "name": "Daxton",
+            "gender": "Male",
+            "birthdate": "2005-05-25"
+        },
+        {
+            "name": "Isabella",
+            "gender": "Female",
+            "birthdate": "2008-09-12"
+        },
+        {
+            "name": "Xaida",
+            "gender": "Female",
+            "birthdate": "2010-09-23"
+        }
+    ]
+}
