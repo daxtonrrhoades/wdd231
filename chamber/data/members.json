@@ -1,0 +1,88 @@
+{
+    "members": [
+        {
+            "name": "Mos Eisley Cantina",
+            "address": {
+                "street": "3112 Outer Kerner Way",
+                "city": "Mos Eisley",
+                "planet": "Tatooine"
+            },
+            "phone": "123-456-1138",
+            "website": "https://www.moseisleycantina.org",
+            "image": "images/cup-straw.svg",
+            "membership": 3
+        },
+        {
+            "name": "Mos Espa Grand Arena",
+            "address": {
+                "street": "3210 Race Way",
+                "city": "Mos Espa",
+                "planet": "Tatooine"
+            },
+            "phone": "123-456-5555",
+            "website": "https://www.mosespagrandarena.org",
+            "image": "images/flag.svg",
+            "membership": 3
+        },
+        {
+            "name": "Jabba's Palace",
+            "address": {
+                "street": "5555 Dune Road",
+                "city": "Northern Dune Sea",
+                "planet": "Tatooine"
+            },
+            "phone": "123-456-2187",
+            "website": "https://www.jabbaspalace.org",
+            "image": "images/music-note-beamed.svg",
+            "membership": 2
+        },
+        {
+            "name": "Jawa Wandering Traders",
+            "address": {
+                "street": "Wandering",
+                "city": "the Dunes",
+                "planet": "Tatooine"
+            },
+            "phone": "123-456-7812",
+            "website": "https://www.jawawanderingtrades.org",
+            "image": "images/robot.svg",
+            "membership": 2
+        },
+        {
+            "name": "Imperial Station Bravo",
+            "address": {
+                "street": "Somewhere In",
+                "city": "Tusken Canyon",
+                "planet": "Tatooine"
+            },
+            "phone": "123-456-7890",
+            "website": "https://www.imperialstationbravo.org",
+            "image": "images/building.svg",
+            "membership": 1
+        },
+        {
+            "name": "Tatooine Speeder Transport",
+            "address": {
+                "street": "Hutt Road",
+                "city": "Mos Espa",
+                "planet": "Tatooine"
+            },
+            "phone": "123-456-0987",
+            "website": "https://www.tatooinespeedertransport.org",
+            "image": "images/car-front.svg",
+            "membership": 2
+        },
+        {
+            "name": "Sunfire Outlets",
+            "address": {
+                "street": "Sunfire Way",
+                "city": "Mos Eisley",
+                "planet": "Tatooine"
+            },
+            "phone": "123-456-1119",
+            "website": "https://www.sunfireoutletsmoseisley.org",
+            "image": "images/cart.svg",
+            "membership": 1
+        }
+    ]
+}

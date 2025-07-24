@@ -1,0 +1,168 @@
+/* ----------PAGE WIDE---------- */
+:root {
+    --primary-color: #823329;
+    --secondary-color: #6564db;
+    --background-color: #d0cfcf;
+    --text-color1: #101d42;
+    --text-color2: #FFFFFF;
+
+    --main-font: "Oswald", sans-serif;
+}
+
+* {
+    font-family: var(--main-font);
+    color: var(--text-color2);
+}
+
+/* ----------HEADER---------- */
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: end;
+    padding: 5px 0 5px 10px;
+    background-color: var(--primary-color);
+    color: var(--text-color2);
+}
+
+header img {
+    display: block;
+    width: 200%;
+    height: auto;
+    margin: 5px;
+}
+
+header span {
+    margin-left: 2.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.25rem;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    width: 180px;
+    border: solid 1px var(--text-color2);
+}
+
+.navigation a {
+    display: block;
+    padding: 0.5rem 10px;
+    color: var(--text-color2);
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: var(--background-color);
+    color: var(--text-color1);
+}
+
+.navigation li.current {
+    background-color: var(--secondary-color);
+}
+
+/* ----------MAIN---------- */
+
+h1 {
+    padding: 0.5rem;
+    color: var(--text-color1);
+}
+
+.display-buttons {
+    display: none;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.member-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member-cards section {
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+    margin: 1rem;
+    text-align: center;
+    width: 380px;
+    height: auto;
+    border-radius: 1rem;
+}
+
+/* ----------FOOTER---------- */
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--primary-color);
+    color: var(--text-color2);
+}
+
+footer p {
+    margin: 1rem;
+}
+
+.social {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    padding: 1rem;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: solid 1px white;
+    border-radius: 2rem;
+}
+
+.social a:hover {
+    background-color: var(--secondary-color);
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.footer-contact {
+    grid-column: 1/2;
+}
+
+.footer-info {
+    grid-column: 3/-1;
+}
