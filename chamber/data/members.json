@@ -10,7 +10,7 @@
             "phone": "123-456-1138",
             "website": "https://www.moseisleycantina.org",
             "image": "images/cup-straw.svg",
-            "membership": 3
+            "membership": "Gold"
         },
         {
             "name": "Mos Espa Grand Arena",
@@ -22,7 +22,7 @@
             "phone": "123-456-5555",
             "website": "https://www.mosespagrandarena.org",
             "image": "images/flag.svg",
-            "membership": 3
+            "membership": "Gold"
         },
         {
             "name": "Jabba's Palace",
@@ -34,7 +34,7 @@
             "phone": "123-456-2187",
             "website": "https://www.jabbaspalace.org",
             "image": "images/music-note-beamed.svg",
-            "membership": 2
+            "membership": "Silver"
         },
         {
             "name": "Jawa Wandering Traders",
@@ -46,7 +46,7 @@
             "phone": "123-456-7812",
             "website": "https://www.jawawanderingtrades.org",
             "image": "images/robot.svg",
-            "membership": 2
+            "membership": "Silver"
         },
         {
             "name": "Imperial Station Bravo",
@@ -58,7 +58,7 @@
             "phone": "123-456-7890",
             "website": "https://www.imperialstationbravo.org",
             "image": "images/building.svg",
-            "membership": 1
+            "membership": "Member"
         },
         {
             "name": "Tatooine Speeder Transport",
@@ -70,7 +70,7 @@
             "phone": "123-456-0987",
             "website": "https://www.tatooinespeedertransport.org",
             "image": "images/car-front.svg",
-            "membership": 2
+            "membership": "Silver"
         },
         {
             "name": "Sunfire Outlets",
@@ -82,7 +82,7 @@
             "phone": "123-456-1119",
             "website": "https://www.sunfireoutletsmoseisley.org",
             "image": "images/cart.svg",
-            "membership": 1
+            "membership": "Member"
         }
     ]
 }

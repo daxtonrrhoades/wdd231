@@ -9,6 +9,7 @@
 
         --main-font: "Oswald", sans-serif;
     }
+
     /* ----------HEADER---------- */
 
     .hamburger {
@@ -31,6 +32,10 @@
     }
 
     /* ----------MAIN---------- */
+
+    .hero a.join-link {
+        bottom: 100px;
+    }
 
     .display-buttons {
         display: block;

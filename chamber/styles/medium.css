@@ -1,0 +1,43 @@
+/* ----------PAGE WIDE---------- */
+@media screen and (min-width: 760px) {
+    :root {
+        --primary-color: #823329;
+        --secondary-color: #6564db;
+        --background-color: #d0cfcf;
+        --text-color1: #101d42;
+        --text-color2: #FFFFFF;
+
+        --main-font: "Oswald", sans-serif;
+    }
+
+    /* ----------MAIN---------- */
+
+    .hero a.join-link {
+        bottom: 80px;
+    }
+
+    .home-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .home-cards .current-events {
+        grid-column: 1/-1;
+    }
+
+    .home-cards .forecast {
+        grid-column: 2/-1
+    }
+
+    .spotlights {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .spotlights section {
+        width: 33%;
+        align-self: center;
+    }
+
+
+}

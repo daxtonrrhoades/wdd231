@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatooine Chamber of Commerce Home</title>
+    <meta name="description"
+        content="This page is home page for the Tatooine Chamber of Commerce. It displays general information for the Tatooine Chamber of Commerce for Daxton Rhoades' WDD 231 chamber project.">
+    <meta name="author" content="Daxton Rhoades">
+    <meta property="og:title" content="Tatooine Chamber of Commerce Home">
+    <meta property="og:description"
+        content="This page is the home page for the Tatooine Chamber of Commerce. It displays general information for the Tatooine Chamber of Commerce.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://daxtonrrhoades.github.io/wdd231/chamber/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/tatooine-logo.png" alt="Tatooine Chamber of Commerce Logo" width="241" height="167">
+        <span>Tatooine Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="hamburger button"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="home">
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="images/mos-eisley-hero-image-large.jpg">
+                <source media="(min-width: 760px)" srcset="images/mos-eisley-hero-image-medium.jpg">
+                <img src="images/mos-eisley-hero-image-small.jpg" alt="Large Image of Mos Eisley, Tatooine"
+                    loading="lazy" width="348" height="360">
+            </picture>
+            <a class="join-link" href="join.html">Join Us</a>
+        </div>
+        <h1>Home</h1>
+        <p>Welcome to the Tatooine Chamber of Commerce Page! We are connecting some local businesses of Tatooine. New
+            here? Check out what Tatooine has to offer!</p>
+        <p>We are always looking for more members! If you are looking to help grow Tatooine as a community, click "Join
+            Us" above!</p>
+        <div class="home-cards">
+            <div class="current-events">
+                <h2>Current Events</h2>
+                <ul>
+                    <li>Pod Racing: Next race, 2 rotations from now. Watch Tatooine's finest pod racers in a thrilling
+                        race through Beggar's Canyon</li>
+                    <li>Annual Jabba's Throneroom Dance: Next dance, 6 Rotations from now. Enjoy some of the best beats
+                        by Max Rebo and his band</li>
+                    <li>Back to School: Next sale, next rotation and lasting for 9 rotations. Get your clothes and
+                        supplies half off at Sunfire Outlets</li>
+                    <li>Predicted Sandstorm: 3 rotations from now it is projected we will have a moderate to severe
+                        sandstorm!</li>
+                    <li>Worldwide Moisture Farm Appreciation Day</li>
+                </ul>
+            </div>
+            <div class="current-weather" id="current-weather">
+                <h2>Current Weather</h2>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption id="weather-description"></figcaption>
+                </figure>
+                <p class="current-temp"></p>
+            </div>
+            <div class="forecast" id="weather-forecast">
+                <h2>Forecast</h2>
+                <p><strong>Today: </strong><span id="weather-today"></span></p>
+                <p><strong>Tomorrow: </strong><span id="weather-tomorrow"></span></p>
+                <p><strong>Next Day: </strong><span id="weather-two-days"></span></p>
+            </div>
+        </div>
+        <div class="spotlights" id="company-cards">
+            <h2>Business Spotlights</h2>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-contact">
+            <p>3112 Outer Kerner Way</p>
+            <p>Mos Eisley, Tatooine</p>
+            <p>info@tatooinecc.org</p>
+            <p>(385) 551-0681</p>
+        </div>
+        <div class="social">
+            <a href="https://github.com/daxtonrrhoades"><img src="images/github.svg" alt="Github Logo" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com/in/daxton-rhoades-17160a2ab/"><img src="images/linkedin.svg"
+                    alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://www.instagram.com/charisma_capn"><img src="images/instagram.svg" alt="Instagram" width="16"
+                    height="16"></a>
+        </div>
+        <div class="footer-info">
+            <p>WDD231 Class Project</p>
+            <p>Daxton Rhoades</p>
+            <p>&copy;<span id="currentyear"></span> Tatooine Chamber of Commerce</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
