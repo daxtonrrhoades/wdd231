@@ -307,9 +307,10 @@ textarea {
     border: solid 1px white;
     border-radius: 1rem;
     background-color: var(--primary-color);
-    &::backdrop {
-        background-color: rgb(0 0 0 / 70%);
-    }
+}
+
+.modal::backdrop {
+    background-color: rgb(0 0 0 / 70%);
 }
 
 .open-button {
