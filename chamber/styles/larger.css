@@ -64,4 +64,26 @@
         align-items: center;
     }
 
+    .join {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .join-form {
+        grid-column: 1/2;
+    }
+
+    .membership {
+        border: solid 1px var(--primary-color);
+        padding: 0.8rem;
+        margin: 1rem;
+    }
+
+    .membership-cards {
+        grid-column: 2/-1;
+    }
+
+    .modal {
+        width: 720px;
+    }
 }

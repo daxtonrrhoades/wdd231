@@ -14,6 +14,16 @@
     color: var(--text-color2);
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 /* ----------HEADER---------- */
 header {
     display: grid;
@@ -175,6 +185,12 @@ h1 {
     text-align: center;
 }
 
+.join h2 {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
 .spotlights section {
     background-color: var(--secondary-color);
     text-align: center;
@@ -218,6 +234,103 @@ body {
     width: 380px;
     height: auto;
     border-radius: 1rem;
+}
+
+.join-form {
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    max-width: 400px;
+    margin: 1.5rem;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    background-color: white;
+    border: solid 2px var(--text-color1);
+    border-radius: 1rem;
+    width: 260px;
+    color: var(--text-color1);
+    margin: 1rem;
+}
+
+input[type="radio"] {
+    margin: 1rem;
+    width: 28px;
+    height: 22px;
+    background-color: white;
+}
+
+textarea {
+    max-width: 300px;
+    max-height: 140px;
+    color: var(--text-color1);
+    background-color: white;
+}
+
+.join-form button {
+    max-width: 120px;
+    height: 44px;
+    margin: 1rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    border: solid 1px white;
+}
+
+.join-form input:required {
+    border-left: solid 8px red;
+}
+
+.join-form input:required:valid {
+    border-left: solid 8px green;
+}
+
+.membership-cards {
+    padding: 0.8rem;
+    margin: 1.5rem;
+    background-color: var(--secondary-color);
+    max-width: 375px;
+    border-radius: 1rem;
+
+    animation: fadeIn 3s ease-in-out;
+}
+
+.modal {
+    padding: 1rem;
+    width: 240px;
+    border: solid 1px white;
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+
+    &::backdrop {
+        background-color: rgb(0 0 0 / 70%);
+    }
+}
+
+.open-button {
+    background-color: var(--primary-color);
+    border: solid 1px white;
+    width: 96px;
+    height: 44px;
+    border-radius: 1rem;
+}
+
+.close-button {
+    background-color: var(--secondary-color);
+    border: solid 1px white;
+    width: 96px;
+    height: 44px;
+    border-radius: 1rem;
+}
+
+.thankyou p {
+    color: var(--text-color1);
 }
 
 /* ----------FOOTER---------- */

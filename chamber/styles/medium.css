@@ -39,5 +39,7 @@
         align-self: center;
     }
 
-
+    .modal {
+        width: 480px;
+    }
 }

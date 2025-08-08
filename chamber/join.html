@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatooine Chamber of Commerce Join</title>
+    <meta name="description"
+        content="This page is a join page for the Tatooine Chamber of Commerce. It contains a form to input your info to join the Tatooine Chamber of Commerce">
+    <meta name="author" content="Daxton Rhoades">
+    <meta property="og:title" content="Tatooine Chamber of Commerce Join">
+    <meta property="og:description"
+        content="This page is a join page for the Tatooine Chamber of Commerce. It contains a form to input your info to join the Tatooine Chamber of Commerce">
+    <meta property="og:image" content="https://github.com/daxtonrrhoades/wdd231/blob/main/chamber/images/.jpeg">
+    <meta property="og:url" content="https://daxtonrrhoades.github.io/wdd231/chamber/join.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/tatooine-logo.png" alt="Tatooine Chamber of Commerce Logo" width="241" height="167">
+        <span>Tatooine Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="hamburger button"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="current"><a href="join.html">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="join">
+        <h1>Join</h1>
+        <form action="thankyou.html" class="join-form" method="get" onsubmit="setTimestamp()">
+            <fieldset>
+                <label for="first-name">First Name:</label>
+                <input type="text" name="first-name" id="first-name" autocomplete="given-name" title="First name"
+                    required>
+                <label for="last-name">Last Name:</label>
+                <input type="text" name="last-name" id="last-name" autocomplete="family-name" title="Last name"
+                    required>
+                <label for="organization-title">Organization Title:</label>
+                <input type="text" name="organization-title" id="organization-title" autocomplete="organization-title"
+                    title="Organization title">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" title="Email address"
+                    autocomplete="email" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone" title="Phone number" autocomplete="tel" required>
+                <label for="organization-name">Organization Name:</label>
+                <input type="text" name="organization-name" id="organization-name" title="Organization name"
+                    autocomplete="organization" required>
+                <label>Membership Level:</label>
+                <label for="np-member"><input type="radio" name="membership" id="np-member"
+                        title="Non Profit Membership" value="Non Profit Membership" required>NP
+                    Membership</label>
+                <label for="bronze-member"><input type="radio" name="membership" id="bronze-member"
+                        title="Bronze Membership" value="Bronze Membership" required>Bronze
+                    Membership</label>
+                <label for="silver-member"><input type="radio" name="membership" id="silver-member"
+                        title="Silver Membership" value="Silver Membership" required>Silver
+                    Membership</label>
+                <label for="gold-member"><input type="radio" name="membership" id="gold-member" title="Gold Membership"
+                        value="Gold Membership" required>Gold
+                    Membership</label>
+                <label for="organization-desc">Organization Description</label>
+                <textarea name="organization-desc" id="organization-desc" title="Organization description"></textarea>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <button type="submit">Sign Up</button>
+            </fieldset>
+        </form>
+        <div class="membership">
+            <h2>Membership Levels</h2>
+            <div class="membership-cards np-card">
+                <h3>Non-Profit Membership</h3>
+                <button class="open-button" popovertarget="npModal">Learn More</button>
+                <dialog class="modal" id="npModal" popover>
+                    <h2>Non-Profit Membership</h2>
+                    <h3>Cost</h3>
+                    <p>*Free</p>
+                    <h3>Benefits</h3>
+                    <ul>
+                        <li>5% Discount on 1 pod race a year</li>
+                        <li>25% off tickets to Jabba's Palace Annual Dance</li>
+                    </ul>
+                    <button class="close-button" popovertarget="npModal">Close</button>
+                </dialog>
+            </div>
+            <div class="membership-cards bronze-card">
+                <h3>Bronze Membership</h3>
+                <button class="open-button" popovertarget="bronzeModal">Learn More</button>
+                <dialog class="modal" id="bronzeModal" popover>
+                    <h2>Bronze Membership</h2>
+                    <h3>Cost</h3>
+                    <p>15 Credits a month</p>
+                    <h3>Benefits</h3>
+                    <ul>
+                        <li>15% Discount on 2 pod races a year</li>
+                        <li>25% off tickets to Jabba's Palace Annual Dance</li>
+                        <li>Buy 2 Get 1 free on any item at Sunfire Outlets</li>
+                    </ul>
+                    <button class="close-button" popovertarget="bronzeModal">Close</button>
+                </dialog>
+            </div>
+            <div class="membership-cards silver-card">
+                <h3>Silver Membership</h3>
+                <button class="open-button" popovertarget="silverModal">Learn More</button>
+                <dialog class="modal" id="silverModal" popover>
+                    <h2>Silver Membership</h2>
+                    <h3>Cost</h3>
+                    <p>50 Credits a month</p>
+                    <h3>Benefits</h3>
+                    <ul>
+                        <li>25% Discount on 3 pod races a year</li>
+                        <li>35% off tickets to Jabba's Palace Annual Dance</li>
+                        <li>Buy 2 Get 1 free on any item at Sunfire Outlets</li>
+                        <li>Discounted flight tickets to Alderaan *Visit Mos Eisley Spaceport for details*</li>
+                    </ul>
+                    <button class="close-button" popovertarget="silverModal">Close</button>
+                </dialog>
+            </div>
+            <div class="membership-cards gold-card">
+                <h3>Gold Membership</h3>
+                <button class="open-button" popovertarget="goldModal">Learn More</button>
+                <dialog class="modal" id="goldModal" popover>
+                    <h2>Gold Membership</h2>
+                    <h3>Cost</h3>
+                    <p>100 Credits a month</p>
+                    <h3>Benefits</h3>
+                    <ul>
+                        <li>Free entry to 5 pod races a year</li>
+                        <li>50% off tickets to Jabba's Palace Annual Dance</li>
+                        <li>Buy 2 Get 1 free on any item at Sunfire Outlets</li>
+                        <li>Discounted flight tickets to Alderaan *Visit Mos Eisley Spaceport for details*</li>
+                        <li>Excluisive deals at Mos Eisley Cantina</li>
+                    </ul>
+                    <button class="close-button" popovertarget="goldModal">Close</button>
+                </dialog>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-contact">
+            <p>3112 Outer Kerner Way</p>
+            <p>Mos Eisley, Tatooine</p>
+            <p>info@tatooinecc.org</p>
+            <p>(385) 551-0681</p>
+        </div>
+        <div class="social">
+            <a href="https://github.com/daxtonrrhoades"><img src="images/github.svg" alt="Github Logo" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com/in/daxton-rhoades-17160a2ab/"><img src="images/linkedin.svg"
+                    alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://www.instagram.com/charisma_capn"><img src="images/instagram.svg" alt="Instagram" width="16"
+                    height="16"></a>
+        </div>
+        <div class="footer-info">
+            <p>WDD231 Class Project</p>
+            <p>Daxton Rhoades</p>
+            <p>&copy;<span id="currentyear"></span> Tatooine Chamber of Commerce</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
