@@ -331,6 +331,9 @@ textarea {
 
 .thankyou p {
     color: var(--text-color1);
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 /* ----------FOOTER---------- */
