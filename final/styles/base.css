@@ -1,0 +1,37 @@
+/* ----------PAGE WIDE---------- */
+:root {
+    --primary-color: #11296B;
+    --secondary-color: #00509D;
+    --accent-color1: #EDEDED;
+    --accent-color2: #FFDB57;
+    --accent-color3: #FFCB05;
+
+    --heading-font: "Luckiest Guy", cursive;
+    --main-font: "Outfit" . sans-serif;
+}
+
+/* ----------Header---------- */
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    color: var(--accent-color2);
+}
+
+
+/* ----------Main---------- */
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+}
+
+p {
+    font-family: var(--main-font);
+}
+
+/* ----------Footer---------- */
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent-color2);
+    padding: 0.8rem;
+}
