@@ -13,8 +13,12 @@
     }
 
     /* ----------Header---------- */
+    header {
+        grid-template-columns: 120px auto 400px;
+    }
+
     header span {
-        margin-left: 2rem;
+        margin: 2rem;
         font-size: 2.5rem;
     }
 
@@ -35,19 +39,10 @@
         display: flex;
         flex-direction: row;
         text-align: center;
-        list-style: none;
-        padding: 0;
-        margin: 0;
     }
 
     .navigation li {
-        width: 180px;
-        border: solid 1px var(--accent-color2);
-    }
-
-    .navigation a {
-        display: block;
-        padding: 0.5rem 10px;
+        font-size: 1.8rem;
     }
 
     /* ----------Main---------- */

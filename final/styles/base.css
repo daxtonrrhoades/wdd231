@@ -27,7 +27,7 @@ header img {
 header span {
     font-family: var(--heading-font);
     margin-left: 1.8rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .hamburger {
@@ -93,6 +93,10 @@ header span {
 }
 
 /* ----------Main---------- */
+main {
+    background-color: var(--accent-color1);
+}
+
 h1,
 h2,
 h3,
