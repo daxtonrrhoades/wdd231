@@ -1,0 +1,52 @@
+{
+    "characters": [
+        {
+            "fName": "Luke",
+            "lName": "Skywalker",
+            "img": "images/luke-image.jpg",
+            "desc": "The main character of the original trilogy. He embarks on an adventure to defeat Darth Vader, a sith lord whom he finds out is his father."
+        },
+        {
+            "fName": "Leia",
+            "lName": "Organa",
+            "img": "images/leia-image.jpg",
+            "desc": "A Rebel Leader of the original trilogy who accompanies Luke along his adventures. We later find out she is Luke's sister."
+        },
+        {
+            "fName": "Han",
+            "lName": "Solo",
+            "img": "images/han-solo-image.jpg",
+            "desc": "A great pilot of the original trilogy who accompanies Luke along his adventures. He is the capatain of the famous ship, the Millenium Falcon."
+        },
+        {
+            "fName": "Ben",
+            "lName": "Kenobi",
+            "img": "images/kenobi-image.jpg",
+            "desc": "An old hermit jedi who went into hiding after the purge. His former name was Obi Wan Kenobi. He watched over luke from afar from the day he was born."
+        },
+        {
+            "fName": "Darth",
+            "lName": "Vader",
+            "img": "images/vader-image.jpg",
+            "desc": "The main antagonist of the original trilogy. We learn he is Luke's Father and was once named Anakin. Back then he fought in the Clone Wars alongside Ben."
+        },
+        {
+            "fName": "The",
+            "lName": "Emperor",
+            "img": "images/emperor-image.webp",
+            "desc": "The villain behind the scenes of Lord Vader. The Emperor was in control of the Galactic Empire and all of their operations."
+        },
+        {
+            "fName": "C3PO",
+            "lName": "Protocol Droid",
+            "img": "images/c3po-image.jpg",
+            "desc": "A protocol droid built by Anakin Skywalker when he was a child. He is sold to Luke by the Jawas. He knows about every language across the galaxy. He is best pals with R2D2."
+        },
+        {
+            "fName": "R2D2",
+            "lName": "Astromech Droid",
+            "img": "images/r2d2-image.jpg",
+            "desc": "An Astromech droid owned by Anakin Skywalker when he was a jedi. He is later sold to Luke by the Jawas. He is best pals with C3PO."
+        }
+    ]
+}
