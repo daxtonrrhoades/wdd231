@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wicketpedia Home</title>
+    <meta name="description"
+        content="This serves as a landing page for my final project in WDD231 for Daxton Rhoades. This home page provides a summary of Star Wars and some weapon and vehicle information.">
+    <meta name="author" content="Daxton Rhoades">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <link rel="icon" href="images/ewok.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/star-wars-logo.png" alt="Logo for Star Wars" loading="lazy" width="120" height="63">
+        <span>Wicketpedia</span>
+        <button id="ham-btn" class="hamburger" aria-label="hamburger button"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="images/hyperspace-hero-lg.jpg">
+                <source media="(min-width: 760px)" srcset="images/hyperspace-hero-med.jpg">
+                <img src="images/hyperspace-hero-sm.jpg" alt="Large image of jump to hyperspace" width="543"
+                    height="347" loading="lazy">
+            </picture>
+            <h1>Home</h1>
+        </div>
+        <div class="grid">
+            <div class="summary">
+                <h2>Star Wars Summary</h2>
+                <h3>Original Trilogy</h3>
+                <p>A farmboy named Luke Skywalker is sent by Old Ben, also known as Obi Wan Kenobi, to rescue princess
+                    Leia
+                    who
+                    has been taken hostage by Darth Vader.</p>
+                <p>He is accompanied by the Captain of the Millenium Falcon, Han Solo, and his fuzzy friend Chewbacca
+                    along
+                    with
+                    Old Ben and the droids, R2D2 and C3PO.</p>
+                <p>On the Death Star Obi Wan Sacrifices himself to get the others to their ship safely and stays behind
+                    with
+                    Vader and falls at his hand.</p>
+                <p>In the next film, we start on the snowy planet Hoth and Luke and his friends are attacked by Imperial
+                    forces
+                    commanded by Darth Vader.</p>
+                <p>Luke travels to Dagobah to learn the ways of the Jedi and meets Yoda, an old friend of Ben and a
+                    Jedi
+                    Master
+                    who will teach Luke.</p>
+                <p>Luke is influenced by the force to go help his friends and there he learns that Darth Vader is his
+                    father.
+                    Han is also frozen in Carbonite.</p>
+                <p>In the next film Luke is determined to bring his father back to the light side. He returns to Dagobah
+                    to
+                    finish his training and Yoda passes away.</p>
+                <p>Han is freed from Carbonite at Jabba's Palace and Luke is thrown into the Rancor's pit to be eaten
+                    up.
+                    Luke
+                    is victorious and they escape the palace.</p>
+                <p>Luke is put up against Vader and his master the Emperor as Luke's friends plan to blow up the
+                    second
+                    Death
+                    Star</p>
+                <p>Luke convinces Vader there is still good in him and together they defeat Sidious. Though due to being
+                    electricuted Vader does not survive</p>
+            </div>
+            <aside class="weapons-vehicles">
+                <h2>Weapons and Vehicles</h2>
+                <div class="wv-cards">
+                    <div class="blaster-card wv-card">
+                        <h3>E-11 Blaster</h3>
+                        <button class="open-button" popovertarget="blasterModal">Learn More</button>
+                        <dialog class="modal" id="blasterModal" popover>
+                            <h3>E-11</h3>
+                            <img src="images/e11-blaster.webp" alt="Image of an E-11 blaster" width="1920" height="800"
+                                loading="lazy">
+                            <h4>Description</h4>
+                            <p>The E-11 is one of the most common blasters used by Imperial Stormtroopers in the
+                                Original
+                                Trilogy of Star Wars.</p>
+                            <p>A basic imperial automatic blaster rifle</p>
+                            <button class="close-button" popovertarget="blasterModal">Close</button>
+                        </dialog>
+                    </div>
+                    <div class="lightsaber-card wv-card">
+                        <h3>Lightsaber</h3>
+                        <button class="open-button" popovertarget="lightsaberModal">Learn More</button>
+                        <dialog class="modal" id="lightsaberModal" popover>
+                            <h3>Lightsaber</h3>
+                            <img src="images/lightsabers.webp" alt="Image of different Lightsabers" width="904"
+                                height="884" loading="lazy">
+                            <h4>Description</h4>
+                            <p>The Lightsaber is one of the most well known weapons of Star Wars. It is a blade made of
+                                light that expands and retracts from a small hilt.</p>
+                            <p>They come in multiple colors depending on the Kyber crystal enclosed inside.</p>
+                            <p>The most known users are Luke Skywalker, Obi Wan Kenobi, and Darth Vader</p>
+                            <button class="close-button" popovertarget="lightsaberModal">Close</button>
+                        </dialog>
+                    </div>
+                    <div class="xwing-card wv-card">
+                        <h3>X-Wing Starfighter</h3>
+                        <button class="open-button" popovertarget="xWingModal">Learn More</button>
+                        <dialog class="modal" id="xWingModal" popover>
+                            <h3>X-Wing</h3>
+                            <img src="images/xwing.jpg" alt="Image of an X-Wing Starfighter" width="696" height="467"
+                                loading="lazy">
+                            <h4>Description</h4>
+                            <p>The X-Wing is one of the most well known starfighters of the Rebellion in the Original
+                                Trilogy of Star Wars.</p>
+                            <p>It is most well known because Luke Skywalker flies an X-wing in the Original Trilogy and
+                                crashes it in a Dagobah swamp.</p>
+                            <button class="close-button" popovertarget="xWingModal">Close</button>
+                        </dialog>
+                    </div>
+                    <div class="tie-card wv-card">
+                        <h3>Tie Fighter Starfighter</h3>
+                        <button class="open-button" popovertarget="tieModal">Learn More</button>
+                        <dialog class="modal" id="tieModal" popover>
+                            <h3>Tie Fighter</h3>
+                            <img src="images/tie-fighter.jpg" alt="Image of a Tie Fighter" width="620" height="465"
+                                loading="lazy">
+                            <h4>Description</h4>
+                            <p>The Tie Fighter is one of the most well known starfighters of the Empire in the Original
+                                Trilogy of Star Wars.</p>
+                            <p>It is used by the empire in star fighter dogfights throughout the trilogy.</p>
+                            <button class="close-button" popovertarget="tieModal">Close</button>
+                        </dialog>
+                    </div>
+                    <div class="death-star-card wv-card">
+                        <h3>Death Star Space Station</h3>
+                        <button class="open-button" popovertarget="deathStarModal">Learn More</button>
+                        <dialog class="modal" id="deathStarModal" popover>
+                            <h3>Death Star</h3>
+                            <img src="images/death-star.webp" alt="Image of the Death Star Space Station" width="600"
+                                height="600" loading="lazy">
+                            <h4>Description</h4>
+                            <p>The Death Star was a weaponized galactic space station used by the empire and Darth Vader
+                                and The Emperor themselves.</p>
+                            <p>It was used to blow up planets and was a main operating base for the empire.</p>
+                            <p>Alderaan was the first planet to be blown up by the first Death Star.</p>
+                            <p>The Death Star had to be rebuilt after the first one was blown up by the Rebellion.</p>
+                            <button class="close-button" popovertarget="deathStarModal">Close</button>
+                        </dialog>
+                    </div>
+                    <div class="speeder-card wv-card">
+                        <h3>74-Z Speeder Bike</h3>
+                        <button class="open-button" popovertarget="speederModal">Learn More</button>
+                        <dialog class="modal" id="speederModal" popover>
+                            <h3>74-Z Speeder</h3>
+                            <img src="images/speeder.webp" alt="Image of a 74-Z Speeder Bike" width="600" height="262"
+                                loading="lazy">
+                            <h4>Description</h4>
+                            <p>74-Z Speeder Bike was a high speed hover bike used on certain planets by the empire.</p>
+                            <p>It appears on the planet Endor in "Return of the Jedi" being ridden by imperial scout
+                                troopers</p>
+                            <p>Luke and Leia ride these in a high speed chase after scout troopers on Endor</p>
+                            <button class="close-button" popovertarget="speederModal">Close</button>
+                        </dialog>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/daxtonrrhoades"><img src="images/github.svg" alt="Github Logo" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com/in/daxton-rhoades-17160a2ab/"><img src="images/linkedin.svg"
+                    alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://www.instagram.com/charisma_capn"><img src="images/instagram.svg" alt="Instagram" width="16"
+                    height="16"></a>
+        </div>
+        <div class="footer-info">
+            <p>&copy;<span id="currentyear"></span> | Daxton Rhoades | WDD231 Final Project</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <a href="sources.html" class="sources">Sources</a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,17 +1,75 @@
-/* ----------PAGE WIDE---------- */
-:root {
-    --primary-color: #11296B;
-    --secondary-color: #00509D;
-    --accent-color1: #EDEDED;
-    --accent-color2: #FFDB57;
-    --accent-color3: #FFCB05;
+@media screen and (min-width: 1200px) {
 
-    --heading-font: "Luckiest Guy", cursive;
-    --main-font: "Outfit" . sans-serif;
+    /* ----------PAGE WIDE---------- */
+    :root {
+        --primary-color: #11296B;
+        --secondary-color: #00509D;
+        --accent-color1: #EDEDED;
+        --accent-color2: #FFDB57;
+        --accent-color3: #FFCB05;
+
+        --heading-font: "Luckiest Guy", cursive;
+        --main-font: "Outfit" . sans-serif;
+    }
+
+    /* ----------Header---------- */
+    header span {
+        margin-left: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: end;
+    }
+
+    .navigation.show {
+        display: flex;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navigation li {
+        width: 180px;
+        border: solid 1px var(--accent-color2);
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.5rem 10px;
+    }
+
+    /* ----------Main---------- */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .summary {
+        grid-column: 1/2;
+    }
+
+    .wv-cards {
+        grid-column: 2/-1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .modal {
+        max-width: 800px;
+    }
+
+    /* ----------Footer---------- */
+
 }
-
-/* ----------Header---------- */
-
-/* ----------Main---------- */
-
-/* ----------Footer---------- */

@@ -1,17 +1,28 @@
-/* ----------PAGE WIDE---------- */
-:root {
-    --primary-color: #11296B;
-    --secondary-color: #00509D;
-    --accent-color1: #EDEDED;
-    --accent-color2: #FFDB57;
-    --accent-color3: #FFCB05;
+@media screen and (min-width: 760px) {
 
-    --heading-font: "Luckiest Guy", cursive;
-    --main-font: "Outfit" . sans-serif;
+    /* ----------PAGE WIDE---------- */
+    :root {
+        --primary-color: #11296B;
+        --secondary-color: #00509D;
+        --accent-color1: #EDEDED;
+        --accent-color2: #FFDB57;
+        --accent-color3: #FFCB05;
+
+        --heading-font: "Luckiest Guy", cursive;
+        --main-font: "Outfit" . sans-serif;
+    }
+
+    /* ----------Header---------- */
+
+    /* ----------Main---------- */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .modal {
+        max-width: 500px;
+    }
+
+    /* ----------Footer---------- */
 }
-
-/* ----------Header---------- */
-
-/* ----------Main---------- */
-
-/* ----------Footer---------- */
