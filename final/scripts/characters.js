@@ -18,6 +18,7 @@ const displayCharacters = (characters) => {
         let name = document.createElement("h2");
         let portrait = document.createElement("img");
         let desc = document.createElement('p');
+        let homeWorld = document.createElement('p');
 
         portrait.setAttribute("src", character.img);
         portrait.setAttribute("alt", `Logo for ${character.fName} ${character.lName}`);
@@ -27,10 +28,12 @@ const displayCharacters = (characters) => {
 
         name.innerHTML = `${character.fName} ${character.lName}`;
         desc.innerHTML = character.desc;
+        homeWorld.innerHTML = `Home World: ${character.homeworld}`;
 
         card.appendChild(name);
         card.appendChild(portrait);
         card.appendChild(desc);
+        card.appendChild(homeWorld)
 
         cards.appendChild(card);
     });

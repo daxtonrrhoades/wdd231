@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wicketpedia Characters</title>
+    <title>Wicketpedia Thank You</title>
     <meta name="description"
-        content="This page is all about the characters of Star Wars. It displays cards for certain characters from Star Wars.">
+        content="This page contains a confirmation page for the form provided on the join page. This page displays the data provided by the user in the form.">
     <meta name="author" content="Daxton Rhoades">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,15 +19,11 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/characters.js" defer></script>
-    <script src="scripts/favchar.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
     <link rel="icon" href="images/ewok.ico">
-    <meta property="og:title" content="Wicketpedia Characters">
+    <meta property="og:title" content="Wicketpedia Thank You">
     <meta property="og:description"
-        content="This page is all about the characters of Star Wars. It displays cards for certain characters from Star Wars.">
-    <meta property="og:image"
-        content="https://github.com/daxtonrrhoades/wdd231/blob/main/final/images/characters-og.jpeg">
-    <meta property="og:url" content="https://daxtonrrhoades.github.io/wdd231/final/characters.html">
+        content="This page contains a confirmation page for the form provided on the join page. This page displays the data provided by the user in the form.">
 </head>
 
 <body>
@@ -38,25 +34,15 @@
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li class="current"><a href="characters.html">Characters</a></li>
+                <li><a href="characters.html">Characters</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Characters</h1>
-        <div class="fav-char">
-            <h2>Favorite Characters</h2>
-            <label for="fav-char">Enter Character Name:</label>
-            <input type="text" id="fav-char" placeholder="Luke Skywalker">
-            <button type="submit" id="fav-btn">Add Character</button>
-            <ul id="fav-list"></ul>
-        </div>
-        <div class="display-buttons">
-            <button id="grid-btn">Grid Layout</button>
-            <button id="list-btn">Column Layout</button>
-        </div>
-        <div class="character-cards"></div>
+    <main class="thankyou">
+        <h1>Thank You</h1>
+        <p>Thank you for joining the Wicketpedia weekly newsletter! We hope you enjoy our emails!</p>
+        <div id="form-results"></div>
     </main>
     <footer>
         <div class="social">

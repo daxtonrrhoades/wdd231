@@ -4,49 +4,106 @@
             "fName": "Luke",
             "lName": "Skywalker",
             "img": "images/luke-image.jpg",
-            "desc": "The main character of the original trilogy. He embarks on an adventure to defeat Darth Vader, a sith lord whom he finds out is his father."
+            "desc": "The main character of the original trilogy. He embarks on an adventure to defeat Darth Vader, a sith lord whom he finds out is his father.",
+            "homeworld": "Tatooine"
         },
         {
             "fName": "Leia",
             "lName": "Organa",
             "img": "images/leia-image.jpg",
-            "desc": "A Rebel Leader of the original trilogy who accompanies Luke along his adventures. We later find out she is Luke's sister."
+            "desc": "A Rebel Leader of the original trilogy who accompanies Luke along his adventures. We later find out she is Luke's sister.",
+            "homeworld": "Alderaan"
         },
         {
             "fName": "Han",
             "lName": "Solo",
             "img": "images/han-solo-image.jpg",
-            "desc": "A great pilot of the original trilogy who accompanies Luke along his adventures. He is the capatain of the famous ship, the Millenium Falcon."
+            "desc": "A great pilot of the original trilogy who accompanies Luke along his adventures. He is the capatain of the famous ship, the Millenium Falcon.",
+            "homeworld": "Corellia"
         },
         {
             "fName": "Ben",
             "lName": "Kenobi",
             "img": "images/kenobi-image.jpg",
-            "desc": "An old hermit jedi who went into hiding after the purge. His former name was Obi Wan Kenobi. He watched over luke from afar from the day he was born."
+            "desc": "An old hermit jedi who went into hiding after the purge. His former name was Obi Wan Kenobi. He watched over luke from afar from the day he was born.",
+            "homeworld": "Stewjon"
         },
         {
             "fName": "Darth",
             "lName": "Vader",
             "img": "images/vader-image.jpg",
-            "desc": "The main antagonist of the original trilogy. We learn he is Luke's Father and was once named Anakin. Back then he fought in the Clone Wars alongside Ben."
+            "desc": "The main antagonist of the original trilogy. We learn he is Luke's Father and was once named Anakin. Back then he fought in the Clone Wars alongside Ben.",
+            "homeworld": "Tatooine"
         },
         {
             "fName": "The",
             "lName": "Emperor",
             "img": "images/emperor-image.webp",
-            "desc": "The villain behind the scenes of Lord Vader. The Emperor was in control of the Galactic Empire and all of their operations."
+            "desc": "The villain behind the scenes of Lord Vader. The Emperor was in control of the Galactic Empire and all of their operations.",
+            "homeworld": "Naboo"
         },
         {
             "fName": "C3PO",
             "lName": "Protocol Droid",
             "img": "images/c3po-image.jpg",
-            "desc": "A protocol droid built by Anakin Skywalker when he was a child. He is sold to Luke by the Jawas. He knows about every language across the galaxy. He is best pals with R2D2."
+            "desc": "A protocol droid built by Anakin Skywalker when he was a child. He is sold to Luke by the Jawas. He knows about every language across the galaxy. He is best pals with R2D2.",
+            "homeworld": "Tatooine"
         },
         {
             "fName": "R2D2",
             "lName": "Astromech Droid",
             "img": "images/r2d2-image.jpg",
-            "desc": "An Astromech droid owned by Anakin Skywalker when he was a jedi. He is later sold to Luke by the Jawas. He is best pals with C3PO."
+            "desc": "An Astromech droid owned by Anakin Skywalker when he was a jedi. He is later sold to Luke by the Jawas. He is best pals with C3PO.",
+            "homeworld": "Naboo"
+        },
+        {
+            "fName": "Master",
+            "lName": "Yoda",
+            "img": "images/yoda-image.webp",
+            "desc": "An old friend of Ben Kenobi. Ben instructs Luke to go visit him to be trained as a Jedi. Yoda was once a great Jedi Master.",
+            "homeworld": "Unknown"
+        },
+        {
+            "fName": "Padme",
+            "lName": "Amidala",
+            "img": "images/padme-image.webp",
+            "desc": "Padme was Luke and Leia's mother. She passed away shortly after giving birth to them. She was married to Anakin Skywalker, now called Darth Vader.",
+            "homeworld": "Naboo"
+        },
+        {
+            "fName": "Bail",
+            "lName": "Organa",
+            "img": "images/bail-image.webp",
+            "desc": "Bail Organa adopted Leia after she was born to watch over her so Vader could not find both of his children. He raised Leia as if she was his own.",
+            "homeworld": "Alderaan"
+        },
+        {
+            "fName": "Owen",
+            "lName": "Lars",
+            "img": "images/owen-lars-image.webp",
+            "desc": "Owen Lars was Luke's adopted father and watched over him until he was killed by the empire at his home while Luke was away. He was Luke Skywalker's uncle.",
+            "homeworld": "Tatooine"
+        },
+        {
+            "fName": "Beru",
+            "lName": "Lars",
+            "img": "images/beru-lars-image.webp",
+            "desc": "Beru was Luke's adopted mother and helped Owen watch over him. She was also found and killed by the empire at her home. She was Luke's aunt.",
+            "homeworld": "Tatooine"
+        },
+        {
+            "fName": "Lando",
+            "lName": "Calrissian",
+            "img": "images/lando-image.webp",
+            "desc": "A scoundrel friend of Han Solo who used to pilot the Millenium Falcon before Han won it from him gambling. He ends up helping the Rebellion and helps blow up the second Death Star.",
+            "homeworld": "Socorro"
+        },
+        {
+            "fName": "Jabba",
+            "lName": "the Hutt",
+            "img": "images/jabba-image.webp",
+            "desc": "A filthy slug crime boss that Han Solo owed debt to. In Empire Strikes Back, when Han is frozen in Carbonite, he is delivered to Jabba the Hutt as a trophy.",
+            "homeworld": "Tatooine"
         }
     ]
 }

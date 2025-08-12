@@ -9,7 +9,7 @@
         --accent-color3: #FFCB05;
 
         --heading-font: "Luckiest Guy", cursive;
-        --main-font: "Outfit" . sans-serif;
+        --main-font: "Quantico", sans-serif;
     }
 
     /* ----------Header---------- */
@@ -63,6 +63,29 @@
 
     .modal {
         max-width: 800px;
+    }
+
+    .join {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .join-form {
+        grid-column: 2/-1;
+        grid-row: 1/-1;
+    }
+
+    .join-intro {
+        grid-column: 1/2;
+    }
+
+    .join-intro p{
+        font-size: 2.3rem;
+    }
+
+    .join-intro img {
+        width: 70%;
     }
 
     /* ----------Footer---------- */
